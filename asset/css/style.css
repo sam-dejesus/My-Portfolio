@@ -28,21 +28,30 @@ a:hover{
 }
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
    
 }
 section{
     margin: 10px;
+    border: 2px solid blue;
+}
+.upper-page{
+    display: flex;
 }
 .about-me{
-border: 2px solid blue;
 width: 700px;
 }
 .overview{
 width: 100%;
 border: 2px solid red;
 }
+.lower-page{
+    display: flex;
+    flex-direction: column;
+}
 .projects{
+    
 
 }
 .contact{
