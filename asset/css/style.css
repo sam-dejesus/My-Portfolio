@@ -32,6 +32,10 @@ main{
     justify-content: center;
    
 }
+img{
+margin: 10px;
+border: 1px solid gray;
+}
 section{
     margin: 10px;
     border: 2px solid blue;
@@ -42,18 +46,37 @@ section{
 .about-me{
 width: 700px;
 }
+.avatar{
+    display: flex;
+    justify-content: center;
+}
 .overview{
 width: 100%;
 border: 2px solid red;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.w3-content{
+    display: flex;
+    justify-content: center;
 }
 .lower-page{
     display: flex;
     flex-direction: column;
 }
 .projects{
-    
-
 }
 .contact{
-    
+}
+.social-primary{
+    display: flex;
+    justify-content: space-around;
+}
+.social-secondary{
+    display: flex;
+    justify-content: space-around;
+}
+i{
+    font-size: 75px;
 }
