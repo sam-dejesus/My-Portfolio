@@ -14,6 +14,15 @@ h2{
     font-size: 40px;
     
 }
+h3{
+    background-color: #3F72AF;
+    color: white;
+    display: flex;
+}
+h3:hover{
+    color: bisque;
+}
+/* the menu class in the navbar */
 .menu{
     display: flex;
     flex-direction: row;
@@ -21,6 +30,7 @@ h2{
     border-bottom: 4px solid #112D4E;
     background-color:#3F72AF;
 }
+/* menu items control the <li> elements while nav-link controls the <a> element */
 .menu-item{
     padding: 10px;
     list-style-type: none;
@@ -28,13 +38,12 @@ h2{
 }
 .nav-link{
     background-color:#3F72AF;
-}
-a{
+
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
-a:hover{
+.nav-link:hover{
     color: bisque;
    
 }
@@ -54,6 +63,7 @@ section{
  
     background-color: #DBE2EF;
 }
+/* upper-page class is the parent element of the about me and overview sections of the page */
 .upper-page{
     display: flex;
     background-color: #DBE2EF;
@@ -68,6 +78,7 @@ border-right: 4px solid #112D4E;
     justify-content: center;
     background-color: #DBE2EF;
 }
+/* the overview class is the parent element of the w3-content class and controls the slideshow. */
 .overview{
 width: 100%;
 
@@ -80,16 +91,18 @@ align-items: center;
     justify-content: center;
     background-color: #DBE2EF;
 }
-
+/* this section is the parent element of the project and contact element */
 .lower-page{
     display: flex;
     flex-direction: column;
     background-color: #DBE2EF;
 }
+/* this section is the parent element */
 .projects{
     background-color: #DBE2EF;
     
 }
+/* div-horiseon class controls the div thats the parent element of the horiseon img and link */
 .div-horiseon{
     display: flex; 
     justify-content: center;
@@ -99,10 +112,12 @@ div{
     flex-direction: row; 
     justify-content: space-around;
 }
+/* the main-project class controls the 1st project i did "Horiseon" */
 .main-project{
     max-height: 1000px; 
     box-shadow: 10px 10px 5px gray;
 }
+/* this controls all the other projects i worked on */
 .other-projects{
     max-width: 400px; 
     min-height: 400px; 
@@ -114,12 +129,14 @@ div{
 .contact{
     background-color: #3F72AF;
 }
+/* this div is for the first part of the contact section it controls the phone and email items */
 .social-primary{
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
     background-color: #3F72AF;
 }
+/* this div is for the second part of the contact section it controls the social media links */
 .social-secondary{
     display: flex;
     justify-content: space-around;
@@ -129,10 +146,13 @@ div{
 i{
     font-size: 75px;
     background-color: #3F72AF;
+    color: #112D4E;
+    
 }
-i:hover{
+.icon:hover{
     color: bisque;
 }
+/* this @media is to prevent the project links from overlapping  */
 @media screen and (max-width:1300px) {
     .div{
         display: flex;
@@ -141,6 +161,7 @@ i:hover{
     }
     
 }
+/* this @media is for tablets and medium screens */
 @media screen and (max-width:600px) {
     .overview{
         display: none;
@@ -165,5 +186,20 @@ i:hover{
     }
     h1{
         font-size: 50px;
+    }
+    h3{
+        font-size: 10px;
+    }
+}
+/* this @media is for cellphones and smaller screens */
+@media screen and (max-width:360px) {
+ i{
+    font-size:40px;
+ }
+   a{
+    font-size: 20px;
+   }
+    h2{
+        font-size: 30px !important; 
     }
 }
