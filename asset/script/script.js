@@ -1,4 +1,4 @@
-
+// function carousel and variable myIndex conrtol the slideshow
 var myIndex = 0;
 carousel();
 
